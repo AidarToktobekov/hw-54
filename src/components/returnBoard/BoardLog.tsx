@@ -15,10 +15,11 @@ const BoardLog:React.FC<Props> = ({hasItem, clicked})=>{
         }
     }
 
-    let [squareStyle, setSquareStyle] = useState(['square'])
+    let [squareStyle, setSquareStyle] = useState(['square']);
 
-    const openSquare = ()=>{    
+    const openSquare = ()=>{   
         clicked = true;
+    
         setSquareStyle(
             squareStyle = ['square', 'white-square']
         )
